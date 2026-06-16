@@ -1,0 +1,32 @@
+.loading-pulse-dots {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  min-height: 80px;
+}
+
+.loading-pulse-dots__dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 999px;
+  animation-name: loading-pulse;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+@keyframes loading-pulse {
+  0% {
+    opacity: 0.35;
+    transform: scale(0.65);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.25);
+  }
+  100% {
+    opacity: 0.35;
+    transform: scale(0.65);
+  }
+}

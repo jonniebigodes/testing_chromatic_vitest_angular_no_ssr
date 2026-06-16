@@ -1,0 +1,12 @@
+.color-interpolation {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 120px;
+}
+
+.color-interpolation__swatch {
+  width: 120px;
+  height: 120px;
+  border-radius: var(--spacing-4);
+}

@@ -1,0 +1,52 @@
+.parallax-layers {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 160px;
+}
+
+.parallax-layers__viewport {
+  overflow: hidden;
+  border-radius: 14px;
+  background-color: var(--color-slate-100);
+  position: relative;
+}
+
+.parallax-layers__viewport--horizontal {
+  width: 260px;
+  height: 110px;
+}
+
+.parallax-layers__viewport--vertical {
+  width: 140px;
+  height: 200px;
+}
+
+.parallax-layers__layer {
+  position: absolute;
+  border-radius: 10px;
+}
+
+.parallax-layers__layer--back {
+  width: 78%;
+  height: 62%;
+  left: 11%;
+  top: 19%;
+  background-color: var(--color-blue-300);
+}
+
+.parallax-layers__layer--mid {
+  width: 58%;
+  height: 48%;
+  left: 21%;
+  top: 26%;
+  background-color: var(--color-blue-400);
+}
+
+.parallax-layers__layer--front {
+  width: 40%;
+  height: 34%;
+  left: 30%;
+  top: 33%;
+  background-color: var(--color-blue-600);
+}

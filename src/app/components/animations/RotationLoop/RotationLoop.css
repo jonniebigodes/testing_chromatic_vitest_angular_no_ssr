@@ -1,0 +1,38 @@
+@keyframes rotation-loop-spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.rotation-loop {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 140px;
+}
+
+.rotation-loop__box {
+  width: 88px;
+  height: 88px;
+  border-radius: 16px;
+  background-color: #0ea5e9;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
+  padding-top: 10px;
+  box-sizing: border-box;
+  animation-name: rotation-loop-spin;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+.rotation-loop__dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 999px;
+  background-color: #f8fafc;
+}

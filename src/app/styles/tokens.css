@@ -1,0 +1,89 @@
+:root {
+  /* Colors */
+  --color-black: #000000;
+  --color-black-tr10: rgba(0, 0, 0, 0.1);
+  --color-black-tr05: rgba(0, 0, 0, 0.05);
+  --color-white: #ffffff;
+  --color-white-tr10: rgba(255, 255, 255, 0.1);
+  --color-white-tr05: rgba(255, 255, 255, 0.05);
+
+  --color-slate-50: hsl(212 45% 98%);
+  --color-slate-100: hsl(212 31% 95%);
+  --color-slate-200: hsl(212 52% 95%);
+  --color-slate-300: hsl(212 49% 90%);
+  --color-slate-400: hsl(212 21% 75%);
+  --color-slate-500: hsl(212 10% 50%);
+  --color-slate-600: hsl(212 10% 40%);
+  --color-slate-700: hsl(212 10% 30%);
+  --color-slate-800: hsl(212 10% 20%);
+  --color-slate-900: hsl(212 27% 11%);
+
+  --color-blue-50: hsl(212 100% 98%);
+  --color-blue-100: hsl(212 100% 94%);
+  --color-blue-200: hsl(212 100% 86%);
+  --color-blue-300: hsl(212 100% 73%);
+  --color-blue-400: hsl(212 100% 64%);
+  --color-blue-500: hsl(212 100% 55%);
+  --color-blue-600: hsl(212 100% 46%);
+  --color-blue-tr10: hsl(212 100% 55% / 0.1);
+  --color-blue-tr50: hsl(212 100% 55% / 0.5);
+
+  --color-green-50: #e3f8d9;
+  --color-green-100: #c8efb5;
+  --color-green-200: #a8e38c;
+  --color-green-300: #90da6e;
+  --color-green-400: #82cc5f;
+  --color-green-500: #66bf3c;
+  --color-green-600: #489524;
+
+  --color-yellow-50: #fff7e4;
+  --color-yellow-100: #fff2d7;
+  --color-yellow-200: #ffe6b2;
+  --color-yellow-300: #ffce66;
+  --color-yellow-400: #ffbe33;
+  --color-yellow-500: #ffae00;
+  --color-yellow-600: #e39d07;
+
+  --color-pink-50: #fff1f6;
+  --color-pink-100: #ffecf2;
+  --color-pink-200: #ffc7da;
+  --color-pink-300: #ff91b6;
+  --color-pink-400: #ff6c9d;
+  --color-pink-500: #ff4785;
+  --color-pink-600: #e81c61;
+
+  /* Spacing */
+  --spacing-0: 0px;
+  --spacing-0-25: 1px;
+  --spacing-0-5: 0.125rem;
+  --spacing-1: 0.25rem;
+  --spacing-2: 0.5rem;
+  --spacing-3: 0.75rem;
+  --spacing-4: 1rem;
+  --spacing-5: 1.25rem;
+  --spacing-6: 1.5rem;
+  --spacing-8: 2rem;
+  --spacing-10: 2.5rem;
+  --spacing-12: 3rem;
+  --spacing-16: 4rem;
+  --spacing-20: 5rem;
+  --spacing-24: 6rem;
+
+  /* Font sizes */
+  --font-size-11: 0.6875rem;
+  --font-size-12: 0.75rem;
+  --font-size-14: 0.875rem;
+  --font-size-16: 1rem;
+  --font-size-18: 1.125rem;
+  --font-size-20: 1.25rem;
+  --font-size-24: 1.5rem;
+
+  /* Font weights */
+  --font-weight-regular: 400;
+  --font-weight-medium: 500;
+  --font-weight-semibold: 600;
+  --font-weight-bold: 700;
+
+  /* Transitions */
+  --transition-default: all 0.2s ease;
+}

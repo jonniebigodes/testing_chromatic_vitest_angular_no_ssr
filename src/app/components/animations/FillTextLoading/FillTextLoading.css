@@ -1,0 +1,48 @@
+.fill-text-loading {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 80px;
+}
+
+.fill-text-loading__wrapper {
+  position: relative;
+  display: inline-block;
+}
+
+.fill-text-loading__base {
+  font-size: 28px;
+  font-weight: 700;
+  color: #d4d4d8;
+  letter-spacing: 0.5px;
+  white-space: nowrap;
+  display: inline-block;
+}
+
+.fill-text-loading__overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  pointer-events: none;
+}
+
+.fill-text-loading__progress {
+  overflow: hidden;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.fill-text-loading__filled {
+  font-size: 28px;
+  font-weight: 700;
+  color: #18181b;
+  letter-spacing: 0.5px;
+  white-space: nowrap;
+  display: inline-block;
+}

@@ -1,0 +1,86 @@
+.progress {
+  display: flex;
+  gap: var(--spacing-2);
+}
+
+.progress--horizontal {
+  flex-direction: column;
+  width: 300px;
+}
+
+.progress--vertical {
+  flex-direction: row;
+  width: fit-content;
+}
+
+.progress--disabled {
+  opacity: 0.5;
+  pointer-events: none;
+}
+
+.progress--readonly {
+  pointer-events: none;
+}
+
+.progress__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: var(--spacing-2);
+}
+
+.progress__label {
+  font-size: var(--font-size-14);
+  font-weight: var(--font-weight-medium);
+  color: var(--color-slate-700);
+}
+
+.progress__percentage {
+  font-size: var(--font-size-12);
+  color: var(--color-slate-500);
+  font-weight: var(--font-weight-semibold);
+  min-width: 45px;
+  text-align: right;
+}
+
+.progress__track {
+  position: relative;
+  background-color: var(--color-slate-200);
+  border-radius: 9999px;
+  overflow: hidden;
+}
+
+.progress__track--horizontal {
+  width: 100%;
+  height: var(--spacing-2);
+}
+
+.progress__track--vertical {
+  width: var(--spacing-2);
+  height: 200px;
+}
+
+.progress__fill {
+  position: absolute;
+  left: 0;
+  transition: all 0.3s ease;
+  border-radius: 9999px;
+}
+
+.progress__fill--horizontal {
+  top: 0;
+  height: 100%;
+}
+
+.progress__fill--vertical {
+  bottom: 0;
+  width: 100%;
+}
+
+.progress__fill--default {
+  background-color: var(--color-blue-500);
+}
+
+.progress__fill--readonly {
+  background-color: var(--color-slate-400);
+}

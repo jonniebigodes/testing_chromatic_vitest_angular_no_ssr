@@ -1,0 +1,117 @@
+.calendar {
+  display: inline-block;
+  padding: var(--spacing-4);
+  border: 1px solid var(--color-slate-200);
+  border-radius: var(--spacing-3);
+  background-color: var(--color-white);
+}
+
+.calendar__heading {
+  margin-bottom: var(--spacing-3);
+  font-size: var(--font-size-16);
+  font-weight: var(--font-weight-semibold);
+  color: var(--color-slate-900);
+}
+
+.calendar__view-control {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: var(--spacing-4);
+  gap: var(--spacing-2);
+}
+
+.calendar__arrow {
+  padding: var(--spacing-2);
+  border: none;
+  background: transparent;
+  font-size: var(--font-size-16);
+  border-radius: var(--spacing-2);
+  transition: background-color 0.2s;
+}
+
+.calendar__arrow:not(:disabled) {
+  cursor: pointer;
+  color: var(--color-blue-500);
+}
+
+.calendar__arrow:disabled {
+  cursor: not-allowed;
+  color: var(--color-slate-400);
+}
+
+.calendar__view-trigger {
+  flex: 1;
+  padding: var(--spacing-2) var(--spacing-3);
+  border: none;
+  background: transparent;
+  font-size: var(--font-size-14);
+  font-weight: var(--font-weight-semibold);
+  color: var(--color-slate-900);
+  border-radius: var(--spacing-2);
+  transition: background-color 0.2s;
+}
+
+.calendar__view-trigger:not(:disabled) {
+  cursor: pointer;
+}
+
+.calendar__view-trigger:disabled {
+  cursor: default;
+}
+
+.calendar__table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: var(--spacing-1);
+}
+
+.calendar__weekday {
+  padding: var(--spacing-2);
+  font-size: var(--font-size-12);
+  font-weight: var(--font-weight-semibold);
+  color: var(--color-slate-500);
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.calendar__cell {
+  padding: 0;
+}
+
+.calendar__day {
+  width: var(--spacing-10);
+  height: var(--spacing-10);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  background: transparent;
+  border-radius: var(--spacing-2);
+  font-size: var(--font-size-14);
+  font-weight: var(--font-weight-medium);
+  transition: all 0.2s;
+}
+
+.calendar__day--selected {
+  background: var(--color-blue-500);
+  color: var(--color-white);
+}
+
+.calendar__day--disabled {
+  cursor: not-allowed;
+  color: var(--color-slate-300);
+}
+
+.calendar__day--outside {
+  color: var(--color-slate-400);
+}
+
+.calendar__day--default {
+  cursor: pointer;
+  color: var(--color-slate-700);
+}
+
+.calendar__day:disabled {
+  cursor: not-allowed;
+}

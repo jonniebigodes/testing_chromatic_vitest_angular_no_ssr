@@ -1,0 +1,25 @@
+.spring-oscillator {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 120px;
+}
+
+.spring-oscillator__track {
+  width: 240px;
+  height: 44px;
+  border-radius: 999px;
+  background-color: var(--color-slate-200);
+  display: flex;
+  align-items: center;
+  padding: 0 10px;
+  box-sizing: border-box;
+}
+
+.spring-oscillator__knob {
+  width: 40px;
+  height: 40px;
+  border-radius: 999px;
+  background-color: var(--color-green-600);
+  box-shadow: 0 2px 6px var(--color-black-tr10);
+}

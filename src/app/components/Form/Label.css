@@ -1,0 +1,23 @@
+.label {
+  display: inline-block;
+  font-size: var(--font-size-14);
+  font-weight: var(--font-weight-medium);
+  color: var(--color-slate-700);
+  background-color: transparent;
+  padding: 0;
+  border-radius: 0;
+  margin-bottom: var(--spacing-2);
+  cursor: default;
+  transition: color 0.2s ease;
+}
+
+.label--linked {
+  cursor: pointer;
+}
+
+.label--inverted {
+  color: var(--color-white);
+  background-color: var(--color-slate-800);
+  padding: var(--spacing-1) var(--spacing-2);
+  border-radius: var(--spacing-1);
+}

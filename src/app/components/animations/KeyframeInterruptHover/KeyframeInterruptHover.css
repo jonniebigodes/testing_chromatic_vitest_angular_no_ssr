@@ -1,0 +1,71 @@
+@keyframes keyframe-interrupt-enter {
+  0% {
+    opacity: 0.65;
+    transform: translateY(0) scale(1);
+  }
+  35% {
+    opacity: 1;
+    transform: translateY(-12px) scale(1.06);
+  }
+  100% {
+    opacity: 0.65;
+    transform: translateY(0) scale(1);
+  }
+}
+
+.keyframe-interrupt-hover {
+  min-height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: var(--spacing-2) 0;
+}
+
+.keyframe-interrupt-hover__heading {
+  font-size: var(--font-size-12);
+  font-weight: var(--font-weight-semibold);
+  color: #52525b;
+  text-transform: uppercase;
+  letter-spacing: 0.8px;
+  margin-bottom: var(--spacing-2);
+}
+
+.keyframe-interrupt-hover__heading--spaced {
+  margin-top: var(--spacing-5);
+}
+
+.keyframe-interrupt-hover__card {
+  width: 160px;
+  padding: var(--spacing-4) var(--spacing-3);
+  border-radius: 12px;
+  background-color: #e4e4e7;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  animation: keyframe-interrupt-enter 900ms ease-in-out;
+}
+
+.keyframe-interrupt-hover__card-text {
+  font-size: var(--font-size-16);
+  font-weight: var(--font-weight-bold);
+  color: #18181b;
+}
+
+.keyframe-interrupt-hover__track {
+  width: 220px;
+  height: 14px;
+  border-radius: 999px;
+  background-color: #e4e4e7;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+}
+
+.keyframe-interrupt-hover__bar {
+  height: 100%;
+  border-radius: 999px;
+  background-color: #7c3aed;
+  transition: width 420ms linear;
+}

@@ -1,0 +1,42 @@
+.scramble-text-reveal {
+  min-height: 72px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 12px;
+}
+
+.scramble-text-reveal__content {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  gap: 6px;
+}
+
+.scramble-text-reveal__text {
+  font-size: 26px;
+  font-weight: 700;
+  color: #171717;
+  letter-spacing: 0.5px;
+  font-family: monospace;
+}
+
+.scramble-text-reveal__cursor {
+  width: 3px;
+  height: 28px;
+  background-color: #2563eb;
+  border-radius: 1px;
+  animation: scramble-blink 800ms ease-in-out infinite;
+}
+
+@keyframes scramble-blink {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.35;
+  }
+  100% {
+    opacity: 1;
+  }
+}

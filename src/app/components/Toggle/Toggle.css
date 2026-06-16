@@ -1,0 +1,69 @@
+.toggle {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--spacing-3);
+}
+
+.toggle__button {
+  position: relative;
+  width: var(--spacing-10);
+  height: var(--spacing-6);
+  border-radius: var(--spacing-3);
+  border: none;
+  transition: background-color 0.2s ease;
+  outline: none;
+  flex-shrink: 0;
+}
+
+.toggle__button:not(:disabled) {
+  cursor: pointer;
+}
+
+.toggle__button:not(:disabled):focus-visible {
+  box-shadow: 0 0 0 3px var(--color-blue-tr10);
+}
+
+.toggle__button--off {
+  background-color: var(--color-slate-300);
+}
+
+.toggle__button--on {
+  background-color: var(--color-blue-500);
+}
+
+.toggle__button:disabled {
+  cursor: not-allowed;
+  opacity: 0.5;
+}
+
+.toggle__dot {
+  position: absolute;
+  top: var(--spacing-0-5);
+  width: var(--spacing-5);
+  height: var(--spacing-5);
+  background-color: var(--color-white);
+  border-radius: 50%;
+  transition: transform 0.2s ease, left 0.2s ease;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.toggle__dot--off {
+  left: var(--spacing-0-5);
+}
+
+.toggle__dot--on {
+  left: 22px;
+}
+
+.toggle__label {
+  font-size: var(--font-size-14);
+  user-select: none;
+}
+
+.toggle__label--enabled {
+  color: var(--color-slate-700);
+}
+
+.toggle__label--disabled {
+  color: var(--color-slate-400);
+}

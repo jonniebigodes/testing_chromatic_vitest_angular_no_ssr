@@ -1,0 +1,28 @@
+.input {
+  display: block;
+  width: 100%;
+  padding: var(--spacing-2) var(--spacing-3);
+  background-color: var(--color-white);
+  color: var(--color-slate-800);
+  border: 1px solid var(--color-slate-300);
+  border-radius: var(--spacing-2);
+  font-size: var(--font-size-14);
+  outline: none;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.input:focus {
+  border-color: var(--color-blue-500);
+  box-shadow: 0 0 0 3px var(--color-blue-tr10);
+}
+
+.input--inverted {
+  background-color: var(--color-slate-800);
+  color: var(--color-white);
+  border-color: var(--color-slate-700);
+}
+
+.input--inverted:focus {
+  border-color: var(--color-blue-400);
+  box-shadow: 0 0 0 3px var(--color-blue-tr50);
+}

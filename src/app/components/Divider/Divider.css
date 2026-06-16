@@ -1,0 +1,19 @@
+.divider {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  background-color: transparent;
+  padding: 0;
+}
+
+.divider--inverted {
+  background-color: var(--color-slate-800);
+  padding: var(--spacing-4) 0;
+}
+
+.divider__line {
+  width: 100%;
+  height: 1px;
+  border: none;
+  margin: var(--spacing-4) 0;
+}

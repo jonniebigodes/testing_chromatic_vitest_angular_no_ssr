@@ -1,0 +1,43 @@
+@keyframes loading-ripples-pulse {
+  0% {
+    opacity: 0.55;
+    transform: scale(0.2);
+  }
+  85% {
+    opacity: 0.12;
+    transform: scale(2.07);
+  }
+  100% {
+    opacity: 0;
+    transform: scale(2.4);
+  }
+}
+
+.loading-ripples {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 140px;
+}
+
+.loading-ripples__container {
+  position: relative;
+  width: 100px;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.loading-ripples__ring {
+  position: absolute;
+  width: 72px;
+  height: 72px;
+  border-radius: 999px;
+  border-width: 2px;
+  border-style: solid;
+  box-sizing: border-box;
+  animation-name: loading-ripples-pulse;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
